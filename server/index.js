@@ -1,7 +1,7 @@
 let express = require('express');
 let app = express();
 
-let server = require('https').Server(app)
+let server = require('http').Server(app)
 
 let io = require('socket.io')(server,{
     cors: { // Permite el acceso de orígenes mixtos (CORS)
