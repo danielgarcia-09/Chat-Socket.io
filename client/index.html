@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chat with Socket.io y NodeJs</title>
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+    <style>
+        #messages{
+            margin: 0 auto;
+            width: 95%;
+            min-width: 400px;
+            height: 350px;
+            overflow-y: scroll;
+            border: 1px solid #eee;
+            box-shadow: 0px 0px 20px #ccc inset;
+        }
+
+        .message{
+            width: 400px;
+            height: fit-content;
+            margin: 20px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background: white;
+        }
+
+        form{
+            text-align: center;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form input[type="text"], textarea{
+            
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 0px;
+            box-shadow: 0px 0px 12px #ccc;
+            resize: none;
+        }
+
+        input[type='submit']{
+            cursor: pointer;
+            padding: 15px 35px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 0px;
+            box-shadow: 0px 0px 12px #ccc;
+        }
+
+        input[type='submit']:hover{
+            background: black;
+            color: white;
+            transition: 600ms ease-out;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Chat with Socket.io y NodeJs</h1>
+
+    <div id="messages"></div>
+    
+    <form onsubmit="return addMessage(this);">
+        <input type="text" id="nickname" placeholder="Pon tu nickname!">
+        <textarea name="" id="text" placeholder="Escribe tu mensaje!!!"></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
