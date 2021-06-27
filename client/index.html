@@ -14,7 +14,6 @@
         #messages{
             margin: 0 auto;
             width: 95%;
-            min-width: 400px;
             height: 350px;
             overflow-y: scroll;
             border: 1px solid #eee;
@@ -22,21 +21,35 @@
         }
 
         .message{
-            width: 75%;
+            width: 60%;
             height: fit-content;
-            margin: 20px;
+            margin: 20px 5px 20px 10px;
             padding: 5px;
             border-radius: 5px;
             border: 1px solid #ccc;
             background: white;
         }
 
+        @media screen and (max-width: 505px){
+            #messages{
+                width: 100%;
+            }
+
+            .message{
+                width: fit-content;
+                margin: 7px auto;
+                font-size: 1.2em;
+            }
+        }
+
         form{
             text-align: center;
             margin-top: 15px;
+            padding: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-wrap: wrap;
         }
 
         form input[type="text"], textarea{

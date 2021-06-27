@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Daniel Garcia",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "socket.io": "^4.1.2"
   },
