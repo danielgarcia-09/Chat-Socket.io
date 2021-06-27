@@ -1,4 +1,4 @@
-let socket = io.connect(`https://chat-socketiodan.herokuapp.com:${PORT}`, { 'forceNew': true })
+let socket = io.connect(`https://148.103.81.71":${PORT}`, { 'forceNew': true })
 
 socket.on('messages', function(data) {
     console.log(data);
