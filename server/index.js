@@ -25,7 +25,7 @@ init();
 
 const messages = [{
     id: 1,
-    text: 'Bienvenido al chat privado de Socket.io mmg',
+    text: 'Bienvenido al chat privado de Socket.io',
     nickname: 'Bot - kanedaboi_'
 }]
 
